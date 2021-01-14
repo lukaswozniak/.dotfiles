@@ -2,6 +2,10 @@ if [ -f /etc/zshrc ];then
     source /etc/zshrc
 fi
 
+if [ -n "$PS1" ] && [ -z "$TMUX" ]; then
+    command -v tmux > /dev/null && tmux
+fi
+
 # Enable colors and change prompt:
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
@@ -86,7 +90,3 @@ stty -ixon
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
 source source_extensions .zshrc
-
-if [ -n "$PS1" ] && [ -z "$TMUX" ]; then
-    tmux
-fi

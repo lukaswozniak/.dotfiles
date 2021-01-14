@@ -7,6 +7,10 @@ if [ -f /etc/bashrc ];then
     source /etc/bashrc
 fi
 
+if [ -n "$PS1" ] && [ -z "$TMUX" ]; then
+    command -v tmux > /dev/null && tmux
+fi
+
 export PKG_CONFIG_PATH=/usr/share/pkgconfig:$PKG_CONFIG_PATH
 
 # completion and fzf
@@ -105,7 +109,3 @@ source source_extensions .bashrc
 
 # disable CTRL+S stopping output
 stty -ixon
-
-if [ -n "$PS1" ] && [ -z "$TMUX" ]; then
-    tmux
-fi
