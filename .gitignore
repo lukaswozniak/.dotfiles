@@ -1,6 +1,14 @@
 **/*
 !/.gitignore
 !/.config
+!/.config/aliasrc
+!/.bash_profile
+!/.bashrc
+!/.inputrc
+!/.profile
+!/.zprofile
+!/.zshrc
+!/.tmux.conf
 
 # nvim
 !/.config/nvim
@@ -11,3 +19,5 @@
 # vim
 !/.vim
 !/.vimrc
+
+
