@@ -1,5 +1,7 @@
 **/*
 !/.gitignore
+!/.scripts
+!/.scripts/*
 !/.config
 !/.config/aliasrc
 !/.bash_profile
@@ -10,6 +12,7 @@
 !/.zshrc
 !/.tmux.conf
 !/.gitignore_global
+!/README.md
 
 # nvim
 !/.config/nvim
