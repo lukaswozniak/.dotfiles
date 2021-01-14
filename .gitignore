@@ -9,6 +9,7 @@
 !/.zprofile
 !/.zshrc
 !/.tmux.conf
+!/.gitignore_global
 
 # nvim
 !/.config/nvim
