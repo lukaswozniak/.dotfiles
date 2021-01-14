@@ -1,0 +1,9 @@
+**/*
+!/.gitignore
+!/.config
+
+# nvim
+!/.config/nvim
+!/.config/nvim/**/*
+/.config/nvim/plugged
+/.config/nvim/.netrwhist
