@@ -1,0 +1,11 @@
+#!/bin/sh
+
+setxkbmap pl
+setxkbmap -option caps:escape
+autorandr -c
+
+slstatus &
+sxhkd &
+flameshot &
+
+source source_extensions .xprofile &

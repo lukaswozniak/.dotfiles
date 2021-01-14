@@ -21,4 +21,7 @@
 !/.vim
 !/.vimrc
 
-
+# graphical
+!/.xprofile
+!/.config/sxhkd
+!/.config/sxhkd/sxhkdrc

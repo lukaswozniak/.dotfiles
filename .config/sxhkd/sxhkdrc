@@ -1,0 +1,38 @@
+
+
+XF86AudioRaiseVolume
+    pactl set-sink-volume @DEFAULT_SINK@ +10%
+XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -10%
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+
+XF86AudioPlay
+    playerctl play-pause
+XF86AudioPause
+    playerctl pause
+XF86AudioStop
+    playerctl stop
+XF86AudioNext
+    playerctl next
+XF86AudioPrev
+    playerctl previous
+
+XF86MonBrightnessDown
+    xbacklight -dec 5
+
+XF86MonBrightnessUp
+    xbacklight -inc 5
+
+Print
+    flameshot gui
+
+super + x ; b
+   google-chrome-stable || chromium
+
+super + L
+    light-locker-command -l
+
+super + P
+    j4-dmenu-desktop
