@@ -1,3 +1,7 @@
+if [ -f /etc/profile ];then
+    source /etc/profile
+fi
+
 export PATH="$PATH:$(du "$HOME/.scripts/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
 for ext in $HOME/.dotfiles_ext/*/.scripts
 do
