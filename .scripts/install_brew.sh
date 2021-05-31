@@ -4,7 +4,3 @@ eval $(/home/luwoznia/.linuxbrew/bin/brew shellenv)
 
 brew install zsh zsh-syntax-highlighting tmux nvim fzf the_silver_searcher xclip openssh nodejs npm yarn
 
-sudo pacman -S stow git diff-so-fancy zsh zsh-syntax-highlighting bash-completion fzf tmux vim neovim the_silver_searcher xclip openssh nodejs npm yarn --noconfirm --needed
-
-
-
